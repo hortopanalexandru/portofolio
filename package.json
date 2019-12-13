@@ -1,0 +1,11 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "portofolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hortopan Alexandru",
+  "license": "MIT"
+}
