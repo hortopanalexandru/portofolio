@@ -1,0 +1,560 @@
+html, body {
+    cursor: url(/dist/images/cursor.png), auto !important;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family:'Poppins', sans-serif !important;
+}
+
+/* Showcase Starts */
+
+.video-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 0, 0, 0.6.);
+    opacity: 0.8;
+}
+.header {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+}
+
+.header h1 {
+    color: #ffecdb;
+    font-size: 80px !important;
+}
+.header h4 {
+    color: #fde5d0d7;
+    font-size: 20px !important;
+    
+}
+
+/* Navigation Bar Starts */
+
+.nav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+    font-family: 'Poppins' !important;
+}
+
+.nav.scrolled {
+    background-color:#320000 !important;
+    transition: background-color 500ms linear;
+}
+
+.nav #brand {
+    float: left;
+    display: block;
+    margin-left: 40px;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav #brand a {
+    color: #ffecdb;
+    font-family: Poppins !important;
+    transition: all 500ms ease-out;
+}
+
+.nav #brand a:hover {
+    text-decoration: none;
+}
+
+.nav #menu {
+    float: left;
+    right: 40px;
+    position: fixed;
+}
+
+.nav #menu li {
+    padding-left: 40px;
+    display: inline-block;
+    font-weight: lighter !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 80px;
+    position: relative;
+    transition: all 500ms ease-out;
+}
+
+.nav #menu li a {
+    font-family: Poppins !important;
+    color: #ffecdb;
+    transition: all 500ms ease-out;
+}
+
+.nav #menu li a:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: all 500ms ease-out;
+}
+
+#toggle {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    font-weight: 300;
+    color: #ffecdb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    float: right;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close-btn {
+    position: absolute;
+    right: 30px;
+    font-weight: 300;
+    color: #ffecdb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 2;
+    top: -2px;
+    line-height: 80px;
+}
+
+#resize {
+    z-index: 2;
+    top: 0px;
+    position: fixed;
+    background: #320000;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+#resize #menu {
+    height: 90px;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-40%);
+    text-align: center;
+    display: table-cell;
+    vertical-align: center;
+}
+
+#resize #menu li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    min-height: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+    margin-top: 140px;
+}
+
+#resize #menu li a {
+    color: #ffecdb;
+}
+
+#resize #menu li a:hover {
+    text-decoration: none;
+}
+
+#resize.active {
+    visibility: visible;
+    opacity: 1;
+}
+/* Navigation Bar Ends */
+
+/* About Me Section Starts */
+
+
+
+.content {
+    position: absolute;
+    margin-top: 100vh;
+    width: 100%;
+}
+
+section {
+    padding: 140px 0;
+}
+.story { 
+    margin-top: 50px;
+}
+
+.section-index {
+    color: #ffecdb;
+    font-size: 50px;
+    margin-top:-9px;
+}
+.section-index.index-one { 
+    color: #320000;
+   
+}
+
+.par{ 
+    color:#ffecdb;
+    text-decoration: none;
+}
+.impar { 
+    color: #320000;
+    text-decoration: none;
+}
+.impar:hover { 
+    color: #500000;
+}
+.par:hover { 
+    color: #b48e6d;
+}
+
+
+.section-heading {
+    
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 25px;
+    font-family: 'Poppins' !important;
+    font-weight: bolder;
+}
+.heading-one {
+    color: #3f0000;
+}
+.heading-two { 
+    color:#ffecdb;
+}
+
+.section-subheading {
+    color: #500000;
+    margin: 5px 0;
+    font-family: 'Poppins' !important;
+}
+.section-subheading h1 { 
+    font-size: 20px;
+    
+}
+
+.section-info {
+    font-size: 17px;
+    color: #320000;
+}
+
+.more {
+    margin: 30px 0;
+}
+
+button {
+    background: none;
+    border: 1px solid #320000;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    letter-spacing: 3px;
+    font-weight:bolder;
+    padding: 18px 36px;
+}
+.button-2 { 
+    border: 1px solid #ffecdb;
+    color:#ffecdb;
+
+}
+
+/* About Me Section Ends */
+
+.skills {
+background-color: #320000;
+}
+
+.skill {
+    margin: 30px 0;;
+}
+
+.icon ion-icon {
+    font-size: 36px;
+    color: #ffecdb;
+    font-weight: bolder;
+}
+
+.icon-title {
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: #b48e6d;
+    font-weight: lighter;
+}
+
+ /* Projects Section Starts */
+
+.project-data, .project-img {
+    position: relative;
+}
+
+.project-img {
+    background:#b48e6d;
+    height: 340px;
+}
+
+.projects {
+    margin: 50px 0;
+}
+
+.project-title {
+    margin: 10px 0;
+}
+
+.project-title h5 {
+    font-size: 20px;
+    color:#500000;
+    font-weight: bolder;;
+}
+
+.project-title a {
+    font-size: 17px;
+    text-decoration: none;
+    color:#320000;
+}
+.project-title a:hover {
+    text-decoration: none;
+    color:#500000;
+    text-decoration: line-through;
+}
+
+
+.project-data {
+    overflow: hidden;
+}
+
+.project-one {
+    background: url(/dist/images/project.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project-two {
+    background: url(/dist/images/project.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+/* Project Section Ends */
+
+/* Contact Section Starts */
+
+.contact { 
+    background: #320000;;
+}
+#contact-form {
+     
+    margin: 2% 0;
+}
+
+.contact .icon-title {
+    margin-top: 10px;
+    color: #ffecdb;
+}
+
+#contact-form ul {
+    list-style: none;
+    margin-bottom: 40px;
+    border-radius: 0;
+}
+
+#contact-form li:last-of-type {
+    border-bottom: none;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 20px;
+    color: #ffecdb;
+}
+.col-md-6.icon-title span { 
+    color: #b48e6d;
+    font-size: 17px;
+}
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #ffecdb;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.textarea {
+    border-bottom: 1px solid #b48e6d;
+}
+
+@media(max-width: 900px) {
+    #contact-form {
+          margin: 5% 0;
+          width: 98%;
+    }
+}
+/* Contact Section Ends */
+
+/* Footer Section Starts */
+
+.footer {
+    background: #fff;
+    padding-top: 50px;
+}
+.footer .red-space { 
+    width: 100%;
+    background: #320000;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.red-space span {
+    color:#fff !important;
+    font-size:17px;
+    
+
+}
+
+#media, #address, #mail {
+    text-align: center !important;
+}
+
+.footer .container {
+    padding: 150px 0;
+}
+
+.footer li, h4 {
+    font-size: 20px !important;
+}
+.footer p {
+    font-size: 25px !important;
+}
+.footer h4 {
+    font-weight: lighter;
+    color: #500000;
+}
+
+.footer p {
+    color: #320000;;
+    font-weight: bolder;
+}
+
+.footer li a {
+    font-weight: lighter;
+    color: #320000;
+    padding-left: 20px;
+    font-size: 25px !important;
+}
+#media ul {
+    list-style: none;
+}
+
+#media ul li {
+    display: inline-block;
+}
+ /* Footer Section Ends */
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media(max-width: 900px) {
+    .header {
+          left: 50%;
+    }
+
+    .header h1 {
+          font-size: 34px !important;
+          text-align: center;
+    }
+    .header h4 { 
+          font-size: 9px !important;
+          text-align: center;
+    }
+    .impar, .par {
+        display: none;
+    }
+    .content { 
+        text-align: center !important;
+    }
+    form { 
+        text-align: left !important;
+    }
+    
+}
+
+@media(max-width: 900px) {
+    #toggle {
+          visibility: visible;
+          opacity: 1;
+          margin-top: 6px;
+          margin-right: 4px;
+    }
+
+    nav #brand {
+          margin-left: 10px;
+    }
+
+    #resize ul li a {
+          font-size: 15px;
+          font-family: "Poppins" !important;
+          font-weight: lighter !important;
+          color: #ffecdb !important;
+          transition: all 500ms ease-out;
+    }
+
+    nav #menu {
+          display: none;
+    }
+}
+
+@media(min-width: 900px) {
+    #resize {
+          visibility: hidden !important;
+    }
+}
+
+@media(max-width: 900px) {
+    .footer .container {
+          width: 92% !important;
+    }}
